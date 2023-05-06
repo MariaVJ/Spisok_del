@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
+
+button {
+    cursor: pointer;
+    background-color: rgb(252, 11, 103);
+    border: 2px solid #060706;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    font-size: 20px;
+    width: 250px;
+    box-shadow: 0 8px 16px 0 rgba(241, 8, 8, 0.2), 0 6px 20px 0 rgba(8, 8, 8, 0.19);
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 800px;
+    padding: 5px;
+    border: 2px solid #000000;
+    background-color: rgb(252, 11, 103);
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+@keyframes example {
+    from {background-color: rgb(252, 11, 103);}
+    to {background-color: rgb(245, 14, 26);}
+}
+ul{
+    overflow-y: scroll;
+    list-style-type: none;
+    width: auto;
+    text-align:left;
+    padding: 10px;
+    height: 100px;
+    border: 2px solid rgb(246, 246, 252);
+}
+input {
+    color: rgb(80, 174, 211);
+    width: auto;
+    box-shadow: 0 8px 16px 0 rgba(241, 8, 8, 0.2), 0 6px 20px 0 rgba(8, 8, 8, 0.19);
+}
+body{
+    background-image: url(https://i.artfile.ru/2560x1600_996859_[www.ArtFile.ru].jpg);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:150;
+}
+
+ul li {
+    position: relative;
+    background: linear-gradient(to bottom right, rgb(253, 232, 200), rgb(181, 194, 250));
+    cursor: pointer;
+    padding: auto;
+}
+
+ul li:hover {
+    background: linear-gradient(to bottom right, rgb(170, 241, 212), rgb(245, 187, 230));
+}
+
+span {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+span:hover {
+    transition: all 0.2s ease;
+    color: rgb(247, 247, 247)
+}
+
+.close {
+    color:rgba(253, 253, 253, 0.959);
+    position: absolute; 
+    top: 0;
+    right:2px;
+    margin: 0;
+    padding: 0px 5px 0px 5px;
+}
+
+.close:hover {
+    background-color: rgb(252, 11, 103);
+}
+ul li.done {
+text-decoration: line-through;
+background: rgb(167,241,154);
+background: radial-gradient(circle, rgba(167,241,154,0.9023984593837535) 42%, rgba(241,98,115,0.8827906162464986) 80%);
+}
+
+ul li.hidden {
+   display: none;
+}
